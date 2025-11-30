@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tmx version="1.4">
- <header creationtool="ChatGPT" creationtoolversion="1.0" segtype="sentence" adminlang="en" srclang="ru" datatype="plaintext"/>
+ <header segtype="sentence" adminlang="en" srclang="ru" datatype="plaintext"/>
  <body>
   <tu>
    <tuv xml:lang="ru"><seg>1. ОБЩЕЕ ОПИСАНИЕ</seg></tuv>

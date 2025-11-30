@@ -1,0 +1,164 @@
+GENERAL DESCRIPTION
+Genre: Fantasy platformer with procedural generation
+Platform: PC, consoles
+Number of players: 1
+Mode: Single-player campaign
+
+GAMEPLAY REQUIREMENTS
+2.1. Basic mechanics
+Control a single character who can manipulate gravity.
+Movement and falling physics are tied to the gravity vector.
+"Vaults of the Abyss" system (inventory for key items and resources).
+Magnetization mechanic for certain platforms (magnetic gravity interaction).
+
+2.2. Gravity system
+Gravity engine requirements:
+
+Instant redirection of the player's gravity vector.
+
+Recalculation of the new "support surface" when gravity is changed.
+
+Correct rendering of the world and UI for any gravity vector.
+
+Visual indicators for areas where gravity change is disabled.
+
+Gravity control types:
+
+Local Gravity: Standard ability. The player "falls" toward the nearest surface in the chosen direction (Up / Down / Left / Right).
+
+Inertial Gravity: After a vector change the player retains some inertia from previous movement, enabling long launches/throws.
+
+Magnetic Gravity: Allows temporary "sticking" to specific metal platforms, overriding the global gravity vector.
+
+2.3. Artificial Intelligence
+Enemy behavior (Guardians of the Ruins):
+
+Patrol along predefined routes tied to their gravity orientation.
+
+React to visual detection of the player within their gravity plane.
+
+Search for the player at the last known position.
+
+Cannot change gravity themselves, but can use fixed/stationary transitions.
+
+AI states:
+
+Patrol: Move along a set cycle.
+
+Alert: Increase movement speed and widen view angle when the player is suspected.
+
+Pursuit: Direct chase of the player within the AI’s gravity plane.
+
+Search: Investigate the last known player location for a limited time.
+
+CHARACTER SYSTEM
+3.1. Keeper (main character)
+Abilities:
+
+Heart of the Abyss (Primary ability): Instant change of the personal gravity vector.
+
+Abyssal Gaze: Brief time dilation to assess the situation and precisely select a gravity vector (limited charge).
+
+Inversion Jump: Short teleport-like lunge in the direction opposite to current gravity for quick evasion.
+
+Sense of Gravity: Passive ability that highlights the contours of platforms in the direction of the current gravity vector.
+
+Limitations:
+
+Cannot attack directly; can only dodge and use the environment.
+
+Gravity-change ability has a short cooldown.
+
+Some Stagnant Magic zones block the use of abilities.
+
+RESOURCE AND UPGRADE SYSTEM
+4.1. Resource types
+
+Abyssal Essence: Restores charges for Abyssal Gaze and Inversion Jump.
+
+Shards of Time: Permanent stat upgrades (cooldown reduction, increased slow duration).
+
+Ancient Runes: Unlock new abilities (for example, Magnetic Gravity).
+
+Spatial Keys: Single-use items to activate portals and special mechanisms.
+
+4.2. Ability upgrades
+Available upgrades:
+
+Accelerated Recovery: Reduces gravity-change cooldown.
+
+Increased Capacity: Raises the maximum charge for Abyssal Gaze.
+
+Chain Inversion: Allows two gravity changes in mid-air without touching a surface.
+
+Stable Attraction: Grants immunity to the effects of gravitational vortices.
+
+LEVEL DESIGN
+5.1. Level structure
+
+Procedurally assembled from cubic "Sectors": each sector is a cube with platforms, obstacles and enemies on all six faces.
+
+Non-linear progression: the player may choose which face of a sector to move through.
+
+Mandatory gravity puzzles: progression requires using gravity changes in a specific sequence.
+
+Hidden zones: secret rooms accessible only via advanced gravity techniques.
+
+5.2. Gravity zones
+
+Stable Gravity Zones: standard sectors.
+
+Chaotic Gravity Zones: sectors where the gravity vector randomly changes for the player at set intervals.
+
+Stagnant Magic Zones: block ability use, leaving only the basic jump.
+
+Gravity Vortices: move the player in a random direction on contact.
+
+USER INTERFACE
+6.1. HUD elements
+
+Current Vector Indicator: an arrow in the center of the screen that always shows the character's "down" direction.
+
+Ability Charge Indicator: displays charge levels for Abyssal Gaze and Inversion Jump.
+
+Cooldown Indicator: visual countdown until the next gravity change is available.
+
+Spatial mini-map: a 3D schematic map showing the outline of the current sector and adjacent sectors.
+
+6.2. Visual effects
+
+Gravity Shift Effect: smooth dimming/brightening of the screen and HUD reorientation when gravity changes.
+
+Sense of Gravity visualization: highlights active platforms within the field of view.
+
+Distortion shaders: edge-screen effects when in Chaotic Gravity zones.
+
+TECHNICAL REQUIREMENTS
+7.1. Graphics
+
+Support dynamic reorientation of camera and lighting.
+
+Particle system for gravity-change and teleportation effects.
+
+Shaders to visualize gravitational fields and "forbidden" zones.
+
+Post-processing to create a surreal, weightless atmosphere.
+
+7.2. Performance
+
+Maintain stable 120 FPS during rapid camera changes and with complex level geometry.
+
+Optimize collision calculations for arbitrary gravity vectors.
+
+Efficient memory usage for procedural generation and streaming/loading of sectors.
+
+SAVING AND PERSISTENCE
+8.1. Save system
+
+Checkpoints (Stability Anchors): player-activated points that save progress.
+
+Persistent collectible saves: found runes and shards are saved permanently.
+
+Random level seed: ability to save and share a seed to reproduce a specific generated level.
+
+Run statistics: record time, number of deaths, and number of gravity changes used.

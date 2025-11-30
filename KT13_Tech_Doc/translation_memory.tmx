@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmx version="1.4">
+ <header creationtool="ChatGPT" creationtoolversion="1.0" segtype="sentence" adminlang="en" srclang="ru" datatype="plaintext"/>
+ <body>
+  <tu>
+   <tuv xml:lang="ru"><seg>1. ОБЩЕЕ ОПИСАНИЕ</seg></tuv>
+   <tuv xml:lang="en"><seg>1. GENERAL DESCRIPTION</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Жанр: Фэнтези-платформер с процедурной генерацией</seg></tuv>
+   <tuv xml:lang="en"><seg>Genre: Fantasy platformer with procedural generation</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Платформа: PC, консолы</seg></tuv>
+   <tuv xml:lang="en"><seg>Platform: PC, consoles</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Количество игроков: 1</seg></tuv>
+   <tuv xml:lang="en"><seg>Number of players: 1</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Режим: Одиночное прохождение</seg></tuv>
+   <tuv xml:lang="en"><seg>Mode: Single-player campaign</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>2. ТРЕБОВАНИЯ К ГЕЙМПЛЕЮ</seg></tuv>
+   <tuv xml:lang="en"><seg>2. GAMEPLAY REQUIREMENTS</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>2.1. Базовые механики</seg></tuv>
+   <tuv xml:lang="en"><seg>2.1. Basic mechanics</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Управление одним персонажем со способностью управления гравитацией.</seg></tuv>
+   <tuv xml:lang="en"><seg>Control a single character who can manipulate gravity.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Физика движения и падения, привязанная к вектору гравитации.</seg></tuv>
+   <tuv xml:lang="en"><seg>Movement and falling physics are tied to the gravity vector.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Система "Хранилища Бездны" (инвентарь для ключевых предметов и ресурсов).</seg></tuv>
+   <tuv xml:lang="en"><seg>"Vaults of the Abyss" system (inventory for key items and resources).</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Механика "перемагничивания" гравитации для определенных платформ.</seg></tuv>
+   <tuv xml:lang="en"><seg>Magnetization mechanic for certain platforms (magnetic gravity interaction).</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>2.2. Система гравитации</seg></tuv>
+   <tuv xml:lang="en"><seg>2.2. Gravity system</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Требования к гравитационному движку:</seg></tuv>
+   <tuv xml:lang="en"><seg>Gravity engine requirements:</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Реализация мгновенного перенаправления вектора гравитации для игрока.</seg></tuv>
+   <tuv xml:lang="en"><seg>Instant redirection of the player's gravity vector.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Расчет новой "опорной поверхности" при смене гравитации.</seg></tuv>
+   <tuv xml:lang="en"><seg>Recalculation of the new "support surface" when gravity is changed.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Корректное отображение мира и UI при любом векторе гравитации.</seg></tuv>
+   <tuv xml:lang="en"><seg>Correct rendering of the world and UI for any gravity vector.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Визуализация зон, где смена гравитации невозможна.</seg></tuv>
+   <tuv xml:lang="en"><seg>Visual indicators for areas where gravity change is disabled.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Уровни управления гравитацией:</seg></tuv>
+   <tuv xml:lang="en"><seg>Gravity control types:</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Локальная гравитация: Стандартная способность. Игрок "падает" на ближайшую поверхность в выбранном направлении (Вверх/Вниз/Влево/Вправо).</seg></tuv>
+   <tuv xml:lang="en"><seg>Local Gravity: Standard ability. The player "falls" toward the nearest surface in the chosen direction (Up / Down / Left / Right).</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Инерционная гравитация: После смены вектора игрок сохраняет часть инерции от предыдущего движения, позволяя делать дальние "броски".</seg></tuv>
+   <tuv xml:lang="en"><seg>Inertial Gravity: After a vector change the player retains some inertia from previous movement, enabling long launches/throws.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Магнитная гравитация: Позволяет на короткое время "прилипнуть" к определенным металлическим платформам, игнорируя общий вектор гравитации.</seg></tuv>
+   <tuv xml:lang="en"><seg>Magnetic Gravity: Allows temporary "sticking" to specific metal platforms, overriding the global gravity vector.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>2.3. Искусственный интеллект</seg></tuv>
+   <tuv xml:lang="en"><seg>2.3. Artificial Intelligence</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Поведение врагов (Стражи Руин):</seg></tuv>
+   <tuv xml:lang="en"><seg>Enemy behavior (Guardians of the Ruins):</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Патрулирование по заданным маршрутам, привязанным к своей гравитации.</seg></tuv>
+   <tuv xml:lang="en"><seg>Patrol along predefined routes tied to their gravity orientation.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Реакция на визуальное обнаружение игрока в их плоскости гравитации.</seg></tuv>
+   <tuv xml:lang="en"><seg>React to visual detection of the player within their gravity plane.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Поиск игрока в последней известной точке появления.</seg></tuv>
+   <tuv xml:lang="en"><seg>Search for the player at the last known position.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Неспособность менять гравитацию, но использование стационарных переходов.</seg></tuv>
+   <tuv xml:lang="en"><seg>Cannot change gravity themselves, but can use fixed/stationary transitions.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Состояния AI:</seg></tuv>
+   <tuv xml:lang="en"><seg>AI states:</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Патрулирование: Движение по заданному циклу.</seg></tuv>
+   <tuv xml:lang="en"><seg>Patrol: Move along a set cycle.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Тревога: Ускорение движения и расширение угла обзора при подозрении на игрока.</seg></tuv>
+   <tuv xml:lang="en"><seg>Alert: Increase movement speed and widen view angle when the player is suspected.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Преследование: Прямая погоня за игроком в пределах своей гравитационной плоскости.</seg></tuv>
+   <tuv xml:lang="en"><seg>Pursuit: Direct chase of the player within the AI’s gravity plane.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Поиск: Исследование последней известной позиции игрока в течение ограниченного времени.</seg></tuv>
+   <tuv xml:lang="en"><seg>Search: Investigate the last known player location for a limited time.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>3. СИСТЕМА ПЕРСОНАЖА</seg></tuv>
+   <tuv xml:lang="en"><seg>3. CHARACTER SYSTEM</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>3.1. Хранитель (Главный герой)</seg></tuv>
+   <tuv xml:lang="en"><seg>3.1. Keeper (main character)</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Способности:</seg></tuv>
+   <tuv xml:lang="en"><seg>Abilities:</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Сердце Бездны (Базовая способность): Мгновенная смена личного вектора гравитации.</seg></tuv>
+   <tuv xml:lang="en"><seg>Heart of the Abyss (Primary ability): Instant change of the personal gravity vector.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Взор Бездны: Кратковременное замедление времени для оценки обстановки и точного выбора вектора гравитации (ограниченный заряд).</seg></tuv>
+   <tuv xml:lang="en"><seg>Abyssal Gaze: Brief time dilation to assess the situation and precisely select a gravity vector (limited charge).</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Прыжок Инверсии: Короткий телепорт-рывок в направлении, противоположном текущей гравитации, для быстрого уклонения.</seg></tuv>
+   <tuv xml:lang="en"><seg>Inversion Jump: Short teleport-like lunge in the direction opposite to current gravity for quick evasion.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Чувство Гравитации: Пассивная способность, подсвечивающая контуры платформ в направлении текущего вектора гравитации.</seg></tuv>
+   <tuv xml:lang="en"><seg>Sense of Gravity: Passive ability that highlights the contours of platforms in the direction of the current gravity vector.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Ограничения:</seg></tuv>
+   <tuv xml:lang="en"><seg>Limitations:</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Не может атаковать напрямую, только уворачиваться и использовать окружение.</seg></tuv>
+   <tuv xml:lang="en"><seg>Cannot attack directly; can only dodge and use the environment.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Способность смены гравитации имеет короткий период восстановления (кулдаун).</seg></tuv>
+   <tuv xml:lang="en"><seg>Gravity-change ability has a short cooldown.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Некоторые зоны "Застойной магии" блокируют использование способностей.</seg></tuv>
+   <tuv xml:lang="en"><seg>Some Stagnant Magic zones block the use of abilities.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>4. СИСТЕМА РЕСУРСОВ И УЛУЧШЕНИЙ</seg></tuv>
+   <tuv xml:lang="en"><seg>4. RESOURCE AND UPGRADE SYSTEM</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>4.1. Типы ресурсов</seg></tuv>
+   <tuv xml:lang="en"><seg>4.1. Resource types</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Эссенция Бездны: Восстанавливает заряд "Взора Бездны" и "Прыжка Инверсии".</seg></tuv>
+   <tuv xml:lang="en"><seg>Abyssal Essence: Restores charges for Abyssal Gaze and Inversion Jump.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Осколки Времени: Постоянное улучшение характеристик (уменьшение кулдауна, увеличение длительности замедления).</seg></tuv>
+   <tuv xml:lang="en"><seg>Shards of Time: Permanent stat upgrades (cooldown reduction, increased slow duration).</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Древние Руны: Открывают новые способности (например, "Магнитная гравитация").</seg></tuv>
+   <tuv xml:lang="en"><seg>Ancient Runes: Unlock new abilities (for example, Magnetic Gravity).</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Ключи Пространства: Одноразовые предметы для активации порталов и специальных механизмов.</seg></tuv>
+   <tuv xml:lang="en"><seg>Spatial Keys: Single-use items to activate portals and special mechanisms.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>4.2. Улучшения способностей</seg></tuv>
+   <tuv xml:lang="en"><seg>4.2. Ability upgrades</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Доступные улучшения:</seg></tuv>
+   <tuv xml:lang="en"><seg>Available upgrades:</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Ускоренное Восстановление: Уменьшает кулдаун смены гравитации.</seg></tuv>
+   <tuv xml:lang="en"><seg>Accelerated Recovery: Reduces gravity-change cooldown.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Увеличенный Запас: Повышает максимальный заряд "Взора Бездны".</seg></tuv>
+   <tuv xml:lang="en"><seg>Increased Capacity: Raises the maximum charge for Abyssal Gaze.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Цепная Инверсия: Позволяет сделать две смены гравитации в воздухе без касания поверхности.</seg></tuv>
+   <tuv xml:lang="en"><seg>Chain Inversion: Allows two gravity changes in mid-air without touching a surface.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Стабильное Притяжение: Дает иммунитет к эффектам гравитационных вихрей.</seg></tuv>
+   <tuv xml:lang="en"><seg>Stable Attraction: Grants immunity to the effects of gravitational vortices.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>5. ДИЗАЙН УРОВНЕЙ</seg></tuv>
+   <tuv xml:lang="en"><seg>5. LEVEL DESIGN</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>5.1. Структура уровней</seg></tuv>
+   <tuv xml:lang="en"><seg>5.1. Level structure</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Процедурная сборка из кубических "Секторов": Каждый сектор — это куб, на всех шести гранях которого расположены платформы, препятствия и враги.</seg></tuv>
+   <tuv xml:lang="en"><seg>Procedurally assembled from cubic "Sectors": each sector is a cube with platforms, obstacles and enemies on all six faces.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Нелинейное прохождение: Игрок может выбирать, через какую грань сектора перемещаться дальше.</seg></tuv>
+   <tuv xml:lang="en"><seg>Non-linear progression: the player may choose which face of a sector to move through.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Обязательные гравитационные головоломки: Для прогресса требуется использовать смену гравитации в определенной последовательности.</seg></tuv>
+   <tuv xml:lang="en"><seg>Mandatory gravity puzzles: progression requires using gravity changes in a specific sequence.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Скрытые зоны: Секретные комнаты, доступные только при использовании продвинутых техник смены гравитации.</seg></tuv>
+   <tuv xml:lang="en"><seg>Hidden zones: secret rooms accessible only via advanced gravity techniques.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>5.2. Гравитационные зоны</seg></tuv>
+   <tuv xml:lang="en"><seg>5.2. Gravity zones</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Зоны Стабильной Гравитации: Стандартные сектора.</seg></tuv>
+   <tuv xml:lang="en"><seg>Stable Gravity Zones: standard sectors.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Зоны Хаотичной Гравитации: Сектора, где вектор гравитации случайным образом меняется для игрока с определенной периодичностью.</seg></tuv>
+   <tuv xml:lang="en"><seg>Chaotic Gravity Zones: sectors where the gravity vector randomly changes for the player at set intervals.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Зоны Застойной Магии: Блокируют использование способностей, оставляя только базовый прыжок.</seg></tuv>
+   <tuv xml:lang="en"><seg>Stagnant Magic Zones: block ability use, leaving only the basic jump.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Гравитационные Вихри: Перемещают игрока в случайном направлении при контакте.</seg></tuv>
+   <tuv xml:lang="en"><seg>Gravity Vortices: move the player in a random direction on contact.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>6. ИНТЕРФЕЙС ПОЛЬЗОВАТЕЛЯ</seg></tuv>
+   <tuv xml:lang="en"><seg>6. USER INTERFACE</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>6.1. Элементы HUD</seg></tuv>
+   <tuv xml:lang="en"><seg>6.1. HUD elements</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Индикатор Текущего Вектора: Стрелка в центре экрана, всегда показывающая направление "вниз" для персонажа.</seg></tuv>
+   <tuv xml:lang="en"><seg>Current Vector Indicator: an arrow in the center of the screen that always shows the character's "down" direction.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Индикатор Заряда Способностей: Уровень заряда для "Взора Бездны" и "Прыжка Инверсии".</seg></tuv>
+   <tuv xml:lang="en"><seg>Ability Charge Indicator: displays charge levels for Abyssal Gaze and Inversion Jump.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Индикатор Кулдауна: Визуальное отображение времени до следующей возможности смены гравитации.</seg></tuv>
+   <tuv xml:lang="en"><seg>Cooldown Indicator: visual countdown until the next gravity change is available.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Мини-карта Пространства: 3D-условная карта, показывающая контуры текущего сектора и смежных с ним.</seg></tuv>
+   <tuv xml:lang="en"><seg>Spatial mini-map: a 3D schematic map showing the outline of the current sector and adjacent sectors.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>6.2. Визуальные эффекты</seg></tuv>
+   <tuv xml:lang="en"><seg>6.2. Visual effects</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Эффект Смены Гравитации: Плавное затемнение/осветление экрана, изменение ориентации HUD.</seg></tuv>
+   <tuv xml:lang="en"><seg>Gravity Shift Effect: smooth dimming/brightening of the screen and HUD reorientation when gravity changes.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Визуализация "Чувства Гравитации": Подсветка активных платформ в поле зрения.</seg></tuv>
+   <tuv xml:lang="en"><seg>Sense of Gravity visualization: highlights active platforms within the field of view.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Шейдеры Искажения: Эффекты на границах экрана при нахождении в зонах хаотичной гравитации.</seg></tuv>
+   <tuv xml:lang="en"><seg>Distortion shaders: edge-screen effects when in Chaotic Gravity zones.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>7. ТЕХНИЧЕСКИЕ ТРЕБОВАНИЯ</seg></tuv>
+   <tuv xml:lang="en"><seg>7. TECHNICAL REQUIREMENTS</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>7.1. Графика</seg></tuv>
+   <tuv xml:lang="en"><seg>7.1. Graphics</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Поддержка динамического переориентирования камеры и освещения.</seg></tuv>
+   <tuv xml:lang="en"><seg>Support dynamic reorientation of camera and lighting.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Система частиц для эффектов смены гравитации и телепортации.</seg></tuv>
+   <tuv xml:lang="en"><seg>Particle system for gravity-change and teleportation effects.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Шейдеры для визуализации гравитационных полей и "запретных зон".</seg></tuv>
+   <tuv xml:lang="en"><seg>Shaders to visualize gravitational fields and "forbidden" zones.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Пост-обработка для создания сюрреалистической, "невесомой" атмосферы.</seg></tuv>
+   <tuv xml:lang="en"><seg>Post-processing to create a surreal, weightless atmosphere.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>7.2. Производительность</seg></tuv>
+   <tuv xml:lang="en"><seg>7.2. Performance</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Стабильные 120 FPS при быстрой смене камеры и сложной геометрии уровней.</seg></tuv>
+   <tuv xml:lang="en"><seg>Maintain stable 120 FPS during rapid camera changes and with complex level geometry.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Оптимизация системы расчета коллизий при любом векторе гравитации.</seg></tuv>
+   <tuv xml:lang="en"><seg>Optimize collision calculations for arbitrary gravity vectors.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Эффективное использование памяти для процедурной генерации и подгрузки секторов.</seg></tuv>
+   <tuv xml:lang="en"><seg>Efficient memory usage for procedural generation and streaming/loading of sectors.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>8. СЕТИ И СОХРАНЕНИЯ</seg></tuv>
+   <tuv xml:lang="en"><seg>8. SAVING AND PERSISTENCE</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>8.1. Система сохранений</seg></tuv>
+   <tuv xml:lang="en"><seg>8.1. Save system</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Контрольные точки (Анкеры Стабильности): Активируются игроком, закрепляя прогресс.</seg></tuv>
+   <tuv xml:lang="en"><seg>Checkpoints (Stability Anchors): player-activated points that save progress.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Сохранение коллекционных улучшений: Найденные руны и осколки сохраняются навсегда.</seg></tuv>
+   <tuv xml:lang="en"><seg>Persistent collectible saves: found runes and shards are saved permanently.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Случайное семя уровня: Возможность сохранить и поделиться seed'ом для генерации конкретного понравившегося уровня.</seg></tuv>
+   <tuv xml:lang="en"><seg>Random level seed: ability to save and share a seed to reproduce a specific generated level.</seg></tuv>
+  </tu>
+  <tu>
+   <tuv xml:lang="ru"><seg>Статистика прохождения: Запись времени, количества смертей и использований смены гравитации.</seg></tuv>
+   <tuv xml:lang="en"><seg>Completion statistics: record of time, death count, and gravity change usage.</seg></tuv>
+  </tu>
+ </body>
+</tmx>
